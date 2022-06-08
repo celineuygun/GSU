@@ -1,0 +1,14 @@
+Theoretically, one characteristic of a queue is that it does not have a specific capacity.
+Regardless of how many elements are already contained, a new element can always be added.
+It can also be empty, at which point removing an element will be impossible until a new
+element has been added again. Fixed length arrays are limited in capacity, but it is not
+true that items need to be copied towards the head of the queue. The simple trick of turning
+the array into a closed circle and letting the head and tail drift around endlessly in that
+circle makes it unnecessary to ever move items stored in the array. If n is the size of the
+array, then computing indices modulo n will turn the array into a circle. This is still the
+conceptually simplest way to construct a queue in a high level language, but it does admittedly
+slow things down a little, because the array indices must be compared to zero and the array
+size, which is comparable to the time taken to check whether an array index is out of bounds,
+which some languages do, but this will certainly be the method of choice for a quick and dirty
+implementation, or for any high level language that does not have pointer syntax. The array size
+must be declared ahead of time, but some implementations simply double the declared array size when overflow occurs.
