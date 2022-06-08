@@ -1,2 +1,2 @@
 # INF 102
-## Intoduction à la programmation
+### Introduction à la programmation
