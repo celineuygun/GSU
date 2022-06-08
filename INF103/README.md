@@ -1,2 +1,2 @@
-## INF 103
-Algorithme et programmation approfondie
+# INF 103
+## Algorithme et programmation approfondie
