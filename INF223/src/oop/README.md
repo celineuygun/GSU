@@ -1,2 +1,2 @@
 # INF223
-## Programmation orientée objet
+### Programmation orientée objet
