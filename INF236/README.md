@@ -1,2 +1,2 @@
 # INF236
-## Pratique de la Programmation
+### Pratique de la Programmation
