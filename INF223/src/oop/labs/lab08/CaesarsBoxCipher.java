@@ -76,11 +76,9 @@ public class CaesarsBoxCipher implements WindowListener, ActionListener {
         if (e.getSource() == decryptButton) {
             plain.setText(decrypt(ciphered.getText()));
         }
-
     }
 
     public static String encrypt(String s) {
-
         String encrypted_Text = "";
         s = editText(s);
         int len = s.length();
@@ -97,9 +95,7 @@ public class CaesarsBoxCipher implements WindowListener, ActionListener {
                 }
             }
         }
-
         int count2 = 0;
-
         for (int i = 0; i < matrixEdge; i++) {
             for (int j = 0; j < matrixEdge; j++) {
                 if (count2 <= len) {
@@ -109,9 +105,7 @@ public class CaesarsBoxCipher implements WindowListener, ActionListener {
                     }
                 }
             }
-        }
-
-        return encrypted_Text;
+        } return encrypted_Text;
     }
 
     public static String decrypt(String s) {
@@ -136,9 +130,7 @@ public class CaesarsBoxCipher implements WindowListener, ActionListener {
                 }
             }
         }
-
         int count2 = 0;
-
         for (int i = 0; i < matrixEdge; i++) {
             for (int j = 0; j < matrixEdge; j++) {
                 if (count2 <= len) {
@@ -148,9 +140,7 @@ public class CaesarsBoxCipher implements WindowListener, ActionListener {
                     }
                 }
             }
-        }
-
-        return decrypted_Text;
+        } return decrypted_Text;
     }
 
     public static String editText(String s) {
